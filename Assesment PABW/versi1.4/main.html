@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Mahasiswa</title>
+</head>
+<body>
+<div>
+    <img src="WhatsApp Image 2022-10-25 at 1.32.06 PM.jpeg" alt="Foto Anda">
+    <h2>Nama: Ghifari Kautsar</h2>
+    <p>NIM: 6701223009</p>
+    <p>Kelas: D3SI-46-01</p>
+    <form id="bukuForm">
+        <input type="text" id="jumlah" placeholder="Masukkan jumlah buku">
+        <select id="pilihan">
+            <option value="sherlock">Sherlock</option>
+            <option value="lupin">Lupin</option>
+            <option value="aladin">Aladin</option>
+        </select>
+        <button type="button" onclick="cekBuku()">Ambil Buku</button>
+    </form>
+</div>
+
+<script>
+    let buku = [
+        {"nama": "sherlock", "jumlah":2},
+        {"nama": "lupin", "jumlah":2},
+        {"nama": "aladin", "jumlah":2},
+    ];
+
+    function cekBuku() {
+        let jumlahInput = document.getElementById('jumlah').value.trim();
+        let pilihanBuku = document.getElementById('pilihan').value;
+
+
+    }
+</script>
+</body>
+</html>
